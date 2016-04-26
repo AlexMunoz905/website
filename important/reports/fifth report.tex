@@ -1,0 +1,41 @@
+\documentclass[xcolor=dvipsnames]{beamer}
+\useoutertheme{infolines}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{items}[ball]
+\usepackage{graphicx,multirow,color,xcolor,verbatim,float,comment,amsmath}
+\setbeamertemplate{frametitle}[default][center]
+\begin{document}
+\title{Simultaneously Identifying Multiple Pathways with Alternative Scoring Criteria}
+\author{Bowen Deng}
+\institute{Dept. of Prob. and Stat.}
+\date{}
+\begin{frame}
+\maketitle
+\end{frame}
+\begin{frame}
+To do list:\\
+\begin{itemize}
+\item Test the convergency of crossproduction with small $t$, fixed $k_{\min},k_{\max}$\\
+\item After this, the convergency of $k_{\min},k_{\max}$\\
+\item The selection of $t$\\
+\item The two-step linear programming\\
+\item Other approach for the optimization problem\\
+\item Biological Data\\
+\end{itemize}
+\end{frame}
+\begin{frame}{Crossproduct}
+Denote father: $a_1,\cdots,a_n$, $b_1,\cdots,b_n$, $a_i,b_i\in\{0,1,\cdots,t\}$.\\
+$a_i=\rho$ means i-th gene is in the $\rho$-th set, if $\rho=0$, i-th gene is not selected.\\
+The motivation is to find a feasible solution corresponding to child $c_1,\cdots,c_n$ under constraint:\\
+\[
+\sum_{i=1}^n[(1-x_i)I(a_i=\rho)+x_iI(b_i=\rho)]\in[k_{\min},k_{\max}]
+\]
+where $x_i=0$ represents $c_i=a_i$, and $x_i=1$ represents $c_i=b_i$.\\
+We also wish the child to deviates from the parents so that $\sum_ix_i\approx \frac{n}{2}$.\\
+Therefore, we would like to maximize $\sum_ix_i$, with constraint $\sum_ix_i\leqslant \frac{n}{2}$.\\
+\[
+\sum_{i}x_i\in[\frac{n-c}{2},\frac{n+c}{2}]
+\]
+$\min c$.\\
+\end{frame}
+\end{document}

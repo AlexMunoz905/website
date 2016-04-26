@@ -1,0 +1,4 @@
+\beamer@endinputifotherversion {3.14pt}
+\beamer@sectionintoc {1}{Review}{3}{0}{1}
+\beamer@sectionintoc {2}{Toy Example}{6}{0}{2}
+\beamer@sectionintoc {3}{Parameter Selection on Original Problem}{8}{0}{3}

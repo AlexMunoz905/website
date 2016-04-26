@@ -1,0 +1,39 @@
+div {
+	height: 100px;
+	width:  100px;
+	border-radius: 0;
+}
+
+.first {
+	background-color: #2F3E5A;
+}
+
+.second {
+	background-color: #8B7C4D;
+}
+
+form {
+	display: inline-block;
+}
+
+#button{
+	display: inline-block;
+	height:20px;
+	width:70px;
+	background-color:#cc0000;
+	font-family:arial;
+	font-weight:bold;
+	color:#ffffff;
+	border-radius: 5px;
+	text-align:center;
+	margin-top:2px;
+}
+
+.list {
+	font-family:garamond;
+	color:#cc0000;
+}
+
+input[name="level-name"] {
+	display: none;
+}

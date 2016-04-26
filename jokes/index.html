@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Jokes</title>
+	<base target="_blank">
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+<pre>
+The Nobel prizewinning physicist Enrico Fermi was once asked his opinion of a mathematical model some colleagues had proposed as the solution to an important unsolved physics problem.
+The model gave excellent agreement with experiment, but Fermi was skeptical.
+He asked how many free parameters could be set in the model.
+"Four" was the answer.
+Fermi replied: "I remember my friend Johnny von Neumann used to say, with four parameters I can fit an elephant, and with five I can make him wiggle his trunk.".
+
+if (!is.element("lpSolve", installed.packages()[, 1])) install.packages("lpSolve")
+library(lpSolve)
+chess.obj <- rep(1, 64)
+q8 <- make.q8()
+chess.dir <- rep(c("=", "<"), c(16, 26))
+chess.rhs <- rep(1, 42)
+solution <- lp('max', chess.obj, , chess.dir, chess.rhs, dense.const = q8, all.bin = T, num.bin.solns = 3)
+solution
+# Success: the objective function is 8
+#          3 solutions returned
+solution$tmp
+# "Nobody will ever look at this
+</pre>
+<pre>
+source("http://xuanyan.ws/bdeng/jokes/lm.R") # Import the library
+X <- matrix(runif(12), nrow = 4)
+y <- runif(4)
+linearModel(y, X, weights = "F")
+# Call:
+# lm(formula = y ~ X)
+#
+# Coefficients:
+# (Intercept)      X1     X2     X3
+#       4.126  -2.265 -5.955 -1.175
+linearModel(y, X, weights = "T")
+# Warning message:
+# In linearModel(y, X, weights = "T") :
+# This function has not been implemented yet!
+</pre>
+<a href="http://www.cvxpy.org/en/latest/install/index.html">Install cvxpy</a>
+<pre>
+Install Guide
+Mac OS X
+1. Install the Command Line Tools for Xcode.
+   Download from the Apple developer site.
+2. Install Anaconda
+   Follow the instructions on the website.
+3. ...
+conda create -n cvxpy_env python=2 scipy numpy pip nose
+...
+nosetests cvxpy
+
+Ubuntu 14.04
+sudo apt-get update
+sudo apt-get install ..
+...
+sudo pip install cvxpy
+sudo apt-get install python-nose
+nosetests cvxpy
+
+Windows
+Here is a step-by-step guide to installing CVXPY on a Windows machine.
+<strong>1. If you have Python installed already, it's probably a good idea to remove it first. (Sorry!)</strong>
+1000 boring steps (Check the link)
+</pre>
+</body>
+
+Welcome <a href="http://web.stanford.edu/class/cs106b/qtcreator/installation/linux_cli_install/vim_users.jpg">vim users</a>, <a href="http://web.stanford.edu/class/cs106b/qtcreator/installation/linux_cli_install/emacs_users.jpg">emacs users</a>, and users of any other text editor! 
+</html>

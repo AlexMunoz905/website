@@ -1,0 +1,9 @@
+\beamer@endinputifotherversion {3.14pt}
+\beamer@sectionintoc {1}{Literature Review}{3}{0}{1}
+\beamer@sectionintoc {2}{Candidate Criteria}{7}{0}{2}
+\beamer@sectionintoc {3}{Genetic Algorithm}{10}{0}{3}
+\beamer@sectionintoc {4}{Multiple Value Genetic Algorithm}{17}{0}{4}
+\beamer@sectionintoc {5}{Parameter Selection}{20}{0}{5}
+\beamer@subsectionintoc {5}{1}{Selection of $t$}{20}{0}{5}
+\beamer@subsectionintoc {5}{2}{Selection of range}{24}{0}{5}
+\beamer@sectionintoc {6}{Further Work}{26}{0}{6}

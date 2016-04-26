@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage{indentfirst, amssymb, amsmath, verbatim, latexsym, mathrsfs, algorithm, algorithmic, syntonly, float, graphicx, clrscode, hyperref}
+\newcommand{\dotcup}{\ensuremath{\mathaccent\cdot\cup}}
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{2em}
+\linespread{1.4}
+\title{Convergence of Greedy Algorithm}
+\author{Bowen Deng}
+\date{}
+\begin{document}
+\maketitle
+Independence Gene Model:\\
+$g\in \hat{M}, a_{ij}\sim B(1,p_g), p_g\in[p_L,p_U]$.\\
+$P(\hat{M})=rm. 0\leqslant r\leqslant nt, \min{p(o),p(2)}/2$\\
+$P(M)\geqslant \frac{|M|-d}{|\hat{M}|}P(\hat{M}). M\subset \hat{M}, 0\leqslant d\leqslant1$.\\
+where $P(M)=\sum_{i=1}^mp(\sum_{j=1}^na_{ij}x_j)$, objective: $\arg \min_{|M|=k}P(M)$.\\
+$p(1)=0\leqslant p(0)\leqslant p(2)<p(3)<\cdots$, $p(\cdot)$ should be convex and $p(a)+p(b)\leqslant p(a+b), \forall a,b\in \mathbb{Z}$.\\
+\\
+Lemma 1. $M\subset \hat{M}$, $P(M)\leqslant \frac{|M|}{|\hat{M}|}$, $\exists g\in \hat{M}$, s.t. $P(M\cup \{g\})\leqslant\frac{|M|+1}{|\hat{M}|}P(\hat{M})$.\\
+By contradiction: assume $P(M\cup \{g\})>\frac{|M|+1}{|\hat{M}|}P(\hat{M})$.\\
+$M_i\triangleq M\cup \{g_1,\cdots,g_i\}$, s.t.\\
+$P(M_{i*})>\frac{|M|+i^*}{|\hat{M}|}P(\hat{M})$, $P(M_{i^*+1})\leqslant \frac{|M|+i^*+1}{|\hat{M}|}P(\hat{M})$.\\
+$\Rightarrow P(M_{i^*+1})-P(M_{i^*})<\frac{P(\hat{M})}{|\hat{M}|}\leqslant P(M\cup \{g_{i^*+1}\})-P(M)$.\\
+
+
+
+
+
+\end{document}

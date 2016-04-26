@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>大家来找茬</title>
+	<script src="/library/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	<style>
+		p {
+			margin-left: auto;
+			margin-right: auto;
+			width: 60%;
+			border-style: solid;
+			border-color: black;
+			border-width: 5px;
+		}
+	</style>
+</head>
+<body>
+	<p>
+		\[ \mathrm{e}^{\mathrm{i}\pi} + 1 = 0 \]
+		\[ \Downarrow \]
+		\[ \mathrm{e}^{\mathrm{i}2\pi} = 1 \]
+		\[ \Downarrow \]
+		\[ \mathrm{e}^{\mathrm{i}2k\pi} = 1 \quad \forall k \in \mathbb{Z} \]
+		\[ \Downarrow \]
+		\[ \mathrm{e}^{1 + \mathrm{i}2k\pi} = \mathrm{e} \]
+		\[ \Downarrow \]
+		\[ \mathrm{e}^{(1 + \mathrm{i}2k\pi)^2}
+			= (\mathrm{e}^{1 + \mathrm{i}2k\pi})^{1 + \mathrm{i}2k\pi}
+			= \mathrm{e}^{1 + \mathrm{i}2k\pi}
+			= \mathrm{e} \]
+		\[ \mathrm{e}^{(1 + \mathrm{i}2k\pi)^2}
+			= \mathrm{e}^{1 - 4k^2\pi^2 + \mathrm{i}4k\pi}
+			= \mathrm{e}^{1 - 4k^2\pi^2} \mathrm{e}^{\mathrm{i}4k\pi}
+			= \mathrm{e}^{1 - 4k^2\pi^2} \]
+		\[ \Downarrow \]
+		\[ \mathrm{e} = \mathrm{e}^{1 - 4k^2\pi^2} \quad \forall k \in \mathbb{Z} \]
+		\[ \Downarrow \]
+		\[ 1 = 1 - 4k^2\pi^2 \quad \forall k \in \mathbb{Z} \]
+		\[ \Downarrow \]
+		\[ 4k^2\pi^2 = 0 \quad \forall k \in \mathbb{Z} \]
+	</p>
+</body>
+</html>

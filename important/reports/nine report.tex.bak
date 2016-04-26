@@ -1,0 +1,33 @@
+\documentclass[xcolor=dvipsnames]{beamer}
+\useoutertheme{infolines}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{items}[ball]
+\usepackage{graphicx,multirow,color,xcolor,verbatim,float,comment,amsmath}
+\setbeamertemplate{frametitle}[default][center]
+\begin{document}
+\title{Community Detection in Gene Network}
+\author{Bowen Deng}
+\institute{Dept. of Prob. and Stat.}
+\date{}
+\begin{frame}
+\maketitle
+\end{frame}
+\begin{frame}
+\tableofcontents
+\end{frame}
+\begin{frame}{Review}
+W: gene correlation matrix.\\
+$M=-D^{-1/2}WD^{-1/2}$, where $D$ is the diagonal matrix of row sums of $W$.\\
+Detection of Community:\\
+\[
+\min_{\substack \|u\|_2=1} f(u)=u^TMu+\rho\|u\|_1
+\]
+$C=\{i:|u_i|\leqslant d\}$.
+\end{frame}
+\begin{frame}{RSA}
+RSA(Random Searching Algorithm): we could randomly select $u_1,\cdots,u_N\sim \text{unif}(S^n)$, and calculate $f(u_i), 1\leqslant i\leqslant N$.\\
+
+\end{frame}
+
+
+\end{document}

@@ -1,0 +1,16 @@
+\beamer@endinputifotherversion {3.14pt}
+\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{Motivation}{2}{0}{1}
+\beamer@subsectionintoc {1}{2}{Cancer's relation with genome aberrations}{3}{0}{1}
+\beamer@subsectionintoc {1}{3}{Previous studies on genome aberrations}{5}{0}{1}
+\beamer@subsectionintoc {1}{4}{Contributions of the paper}{8}{0}{1}
+\beamer@sectionintoc {2}{Materials and Methods}{9}{0}{2}
+\beamer@subsectionintoc {2}{1}{Maximum Weight Submatrix Problem}{9}{0}{2}
+\beamer@subsectionintoc {2}{2}{BLP model}{12}{0}{2}
+\beamer@subsectionintoc {2}{3}{GA: a stochastic method}{13}{0}{2}
+\beamer@sectionintoc {3}{Results}{15}{0}{3}
+\beamer@subsectionintoc {3}{1}{Simulation study}{15}{0}{3}
+\beamer@subsectionintoc {3}{2}{Biological applications}{19}{0}{3}
+\beamer@sectionintoc {4}{Discussion and Conclusions}{23}{0}{4}
+\beamer@subsectionintoc {4}{1}{Summary}{23}{0}{4}
+\beamer@subsectionintoc {4}{2}{My Ideas}{24}{0}{4}

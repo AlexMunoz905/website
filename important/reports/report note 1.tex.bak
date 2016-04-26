@@ -1,0 +1,25 @@
+\documentclass{article}
+\usepackage{indentfirst, amssymb, amsmath, verbatim, latexsym, mathrsfs, algorithm, algorithmic, syntonly, float, graphicx, clrscode, hyperref}
+\newcommand{\dotcup}{\ensuremath{\mathaccent\cdot\cup}}
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{2em}
+\linespread{1.4}
+\title{Report Note}
+\author{Bowen Deng}
+\date{}
+\begin{document}
+\maketitle
+Cancer is hard to cure!\\
+We should first understand why cancer is hard to cure. Cancer is related to genome aberrations including gene mutations, copy number alterations and so on. Through these aberrations, the cancer cells can reproduce infinitely while other cells can't due to self-correction. This is the first reason why cancers are hard to kill: the huge amount and ability to reproduce. Another feature of cancer cells is they can spread to other tissues through blood circulation or lymphatic system.\\
+\\
+So what do we do now?\\
+We would like to understand the mechanism of these genome aberrations before making effective drugs to treat cancer.\\
+Genome aberrations can be classified as:
+\begin{itemize}
+\item Passenger Mutation: neutral to cancer proliferation\\
+\item Driver Mutation: Promote cancer cell to proliferate infinitely and diffuse
+\end{itemize}
+Finding out driver mutation is a key to understand cancer progression, and thus aid in designing effective drugs to treat cancer.\\
+
+
+\end{document}

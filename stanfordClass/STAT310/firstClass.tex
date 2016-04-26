@@ -1,0 +1,144 @@
+\documentclass[a4paper,12pt]{article}
+\begin{document}
+Probability
+
+TOLD TO US:\\
+SET $\Omega$ (finite or countable)
+\[
+P(\omega) > 0, \sum_{\omega} P(\omega) = 1
+\]
+\[
+	A \subseteq \Omega, P(A) = \sum_{\omega\in A} P(\omega)
+\]
+
+EX. Birthday Problem:
+"How many people do we need to have chance $50\%$ that 2 or more have same birthday date?"
+Say have n People and C categories.
+What is $\Omega$?
+\[
+(\omega_1, \omega_2, \cdots, \omega_n), \omega_i \in \{1, 2, \cdots, C\}
+\]
+What is $P(\omega)$?
+Try $P(\omega) = \frac{1}{C^n}$
+
+What is A?
+\[
+A = \{\omega: \omega_i \neq \omega_j, \forall i, j\}
+\]
+
+\[
+	P(A) = \sum_{\omega \in A} P(\omega) = \frac{1}{C^n} |A|
+\]
+where $|A| = C (C - 1) (C - 2) \ldots (C - n + 1)$
+
+Answer 1:
+\[
+	P(A) = (1 - 1 / C)(1 - 2 / C) \ldots (1 - (n - 1) / C)
+\]
+
+Answer 2(HUMANS) Use $\log(1 - x) \tilde - X$
+\[
+	P(A) = \exp{\sum_{i = 1}^n log(1 - i / C)}
+		\approx \exp{-\sum_{i = 1}^n i / C}
+		= \exp{-\frac{(n 2)}{C}}
+\]
+
+Now set
+\[
+	e^{-(n 2)}{2} = \frac{1}{2} \rightarrow n = 1.2\sqrt{C} \approx 23
+\]
+
+Answer 3
+$\log(1 - x) = -x + O(x^2)$
+$-x - x^2 \leq \log(1 - x) \leq - x, 0 \leq x \leq \frac{1}{2}$
+
+Theorem: if $n, C$ tend to $\infty$ so that
+\[
+\frac{n^3}{C^2} \rightarrow 0, \frac{(n 2)}{C} \rightarrow E
+\]
+\[
+	P(A) \approx e^{-E}
+\]
+
+Problem $\$10$ How many people:
+Do we need to have even odds to have triple match
+
+More examples:
+Put N points down at a rnorm in $[0, 1]^2$, put $\varepsilon$ Ball around each, what's chance cover?
+We put probabilities on $\tau[0, 1]$
+Manifolds
+
+Half Way House:
+\[
+\Omega = (0, 1\}
+\]
+Work with intervals $(a_n, t_n\}$,
+\[
+	A = \cup_{i = 1}^n I_n, I_n
+\]
+Disjoint instances
+
+Model for fair coin tossing:
+\[
+	\omega = \omega_1, \cdots
+\]
+\[
+	\omega = \sum \frac{d_n(\omega)}{2^n}
+\]
+\[
+	A = \{\omega: d_1(\omega)\}
+\]
+has $P(A) = \frac{1}{2}$, similarly,
+\[
+	P(A_1 = E_1, \cdots, A_n = E_n) = \frac{1}{2^n}
+\]
+
+Theorem (Bernoulli Weak Law of Large Numbers)
+\[
+	\forall \varepsilon > 0,
+	P\{|\frac{d_1 + \cdots + d_n}{n} - \frac{1}{2}| > \varepsilon\} \rightarrow 0
+\]
+
+Proof: Define $\Omega_n(\omega) = 2 \times d_n(\omega) - 1$
+Same to prove
+\[
+	\forall \varepsilon
+	P\{|\frac{1}{n}\sum_{i = 1}^n \Omega_i| \rightarrow 0
+\]
+Note $\int_0^1 \Omega_i(\omega)\mathrm{d}\omega = 0$
+\[
+	\int_0^1 \Omega_i(\omega)\Omega_j(\omega) = \delta_{ij}
+\]
+So $\int_0^1 (\sum I_n)\mathrm{d}\omega = 0$, $\int_0^1 (\sum I_n)^2 \mathrm{d}\omega = n$
+\[
+	P\{|\frac{1}{n}\sum A_i| > 2 \varepsilon\}
+\]
+Apply Markov's inequality and we are done.
+
+Lemma: if %$f:(0, 1) \rightarrow \mathbb{R}$,
+%\[
+%	f(\omega) \geqslant 0 
+%\]
+%Then $\forall a > 0$
+%\[
+%	P\{\omega f(\omega) \geqslant a\} \leqslant \frac{\int_0^1 f(\omega)\mathrm{d}\omega}{a}
+%\]
+%PF.
+%\[
+%	\int_0^1 f(\omega)\mathrm{d}\omega \geqslant \int_A f(\omega) \leqslant a P(A)
+%\]
+
+
+We want strong law: Borel's no.. number theorem:
+\[
+	\lim \frac{1}{n} \sum_{i = 1}^n \Omega_n(\omega)
+\]
+Problems: not tame
+$w = .1111, w = 0110000111110$, limit doesn't exist
+
+Def. $A \subseteq \Omega$ to be negligable
+If $\forall \in A$ can be converted by countably many intervals of total length $<\varepsilon$.
+eq. $x \in \Omega$ negligable, rationals in $(0, 1]$ negligable.
+
+
+\end{document}

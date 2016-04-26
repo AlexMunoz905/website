@@ -1,0 +1,16 @@
+.box {
+	float: left;
+	width: 800px;
+}
+
+.box p {
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.button button {
+	width: 200px;
+	height: 50px;
+	font-size: 20px;
+}

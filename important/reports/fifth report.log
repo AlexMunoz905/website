@@ -1,0 +1,14 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdftex 2013.11.1)  28 MAR 2014 14:40
+entering extended mode
+**D:/undergraduate*thesis/reports/fifth*report
+("D:/undergraduate thesis/reports/fifth report.tex"
+! Undefined control sequence.
+l.1 \documentclass
+                  [xcolor=dvipsnames]{beamer}
+? 
+! Emergency stop.
+l.1 \documentclass
+                  [xcolor=dvipsnames]{beamer}
+End of file on the terminal!
+
+!  ==> Fatal error occurred, no output PDF file produced!

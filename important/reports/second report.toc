@@ -1,0 +1,14 @@
+\beamer@endinputifotherversion {3.14pt}
+\beamer@sectionintoc {1}{Motivation}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Biological Issue}{3}{0}{1}
+\beamer@sectionintoc {2}{Studies Ad hoc}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Coverage Principle}{7}{0}{2}
+\beamer@subsectionintoc {2}{2}{Exclusivity Principle}{8}{0}{2}
+\beamer@subsectionintoc {2}{3}{Mathematical Translation}{13}{0}{2}
+\beamer@sectionintoc {3}{Studies in the paper}{20}{0}{3}
+\beamer@subsectionintoc {3}{1}{BLP Model}{20}{0}{3}
+\beamer@subsectionintoc {3}{2}{Integrated Mutation and gene Expression data}{22}{0}{3}
+\beamer@sectionintoc {4}{Potential Improvements}{25}{0}{4}
+\beamer@sectionintoc {5}{My studies}{26}{0}{5}
+\beamer@subsectionintoc {5}{1}{Simulation Study}{32}{0}{5}
+\beamer@sectionintoc {6}{Further Challenges}{39}{0}{6}

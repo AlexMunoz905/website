@@ -1,0 +1,38 @@
+h1 {
+	font-size: 28px;
+	font-weight: bold;
+}
+
+p {
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.intro {
+	text-align: center;
+}
+
+.links {
+	margin-top:10px;
+}
+
+.link {
+	background-color: #ABCDEF;
+	transition: background-color 0.5s ease;
+	display: inline-block;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+.link:hover {
+	background-color: red;
+}
+
+.link > a {
+	display: block;
+	font-size: 25px;
+	padding: 20px;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+}

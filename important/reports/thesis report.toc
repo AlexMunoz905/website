@@ -1,0 +1,12 @@
+\contentsline {section}{\numberline {1}INTRODUCTION}{2}
+\contentsline {section}{\numberline {2}MATERIALS AND METHODS}{7}
+\contentsline {subsection}{\numberline {2.1}A brief introduction}{7}
+\contentsline {subsection}{\numberline {2.2}Alternative Scoring Methods}{8}
+\contentsline {subsection}{\numberline {2.3}Multiple Value Genetic Algorithm: a flexible method}{9}
+\contentsline {subsection}{\numberline {2.4}Selection of pathway number}{11}
+\contentsline {subsection}{\numberline {2.5}Selection of Range for $k$}{12}
+\contentsline {section}{\numberline {3}RESULTS}{13}
+\contentsline {subsection}{\numberline {3.1}Simulation study}{14}
+\contentsline {subsection}{\numberline {3.2}Permutation Test}{14}
+\contentsline {subsection}{\numberline {3.3}Toy Example}{17}
+\contentsline {section}{\numberline {4}DISCUSSION}{18}

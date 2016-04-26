@@ -1,0 +1,33 @@
+\documentclass[xcolor=dvipsnames]{beamer}
+\useoutertheme{infolines}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{items}[ball]
+\usepackage{graphicx,multirow,color,xcolor,verbatim,float,comment,amsmath}
+\setbeamertemplate{frametitle}[default][center]
+\begin{document}
+\title{Parameter Selection on Simultaneous Driver Pathway Detection}
+\author{Bowen Deng}
+\institute{Dept. of Prob. and Stat.}
+\date{}
+\begin{frame}
+\maketitle
+\end{frame}
+\begin{frame}
+\tableofcontents
+\end{frame}
+\begin{frame}
+We generate data with $t=2$, and use the permutation test to apply BLP on $t=3$, $k_{\min}=1$, $k_{\max}=10$.\\
+The $90\%$ quantile of
+\end{frame}
+\begin{frame}{Data}
+t=3,
+theory: 46 44 38\\
+t=4,
+theory:
+\end{frame}
+\begin{frame}
+A<-gensim(50,30,t=2,1,10,3)
+
+\end{frame}
+
+\end{document}

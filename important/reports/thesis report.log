@@ -1,0 +1,767 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.24)  12 JUN 2014 16:15
+entering extended mode
+**D:/undergraduate*thesis/reports/thesis*report.tex
+("D:/undergraduate thesis/reports/thesis report.tex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for loaded.
+(D:\tex\CTEX\MiKTeX\tex\latex\base\article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(D:\tex\CTEX\MiKTeX\tex\latex\base\size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(D:\tex\CTEX\MiKTeX\tex\latex\psnfss\times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(D:\tex\CTEX\MiKTeX\tex\latex\booktabs\booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen103
+\lightrulewidth=\dimen104
+\cmidrulewidth=\dimen105
+\belowrulesep=\dimen106
+\belowbottomsep=\dimen107
+\aboverulesep=\dimen108
+\abovetopsep=\dimen109
+\cmidrulesep=\dimen110
+\cmidrulekern=\dimen111
+\defaultaddspace=\dimen112
+\@cmidla=\count87
+\@cmidlb=\count88
+\@aboverulesep=\dimen113
+\@belowrulesep=\dimen114
+\@thisruleclass=\count89
+\@lastruleclass=\count90
+\@thisrulewidth=\dimen115
+)
+(D:\tex\CTEX\MiKTeX\tex\latex\multirow\multirow.sty
+\bigstrutjot=\dimen116
+)
+(D:\tex\CTEX\MiKTeX\tex\latex\amsfonts\amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(D:\tex\CTEX\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks14
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+(D:\tex\CTEX\MiKTeX\tex\latex\ams\classes\amsthm.sty
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks15
+\thm@bodyfont=\toks16
+\thm@headfont=\toks17
+\thm@notefont=\toks18
+\thm@headpunct=\toks19
+\thm@preskip=\skip43
+\thm@postskip=\skip44
+\thm@headsep=\skip45
+\dth@everypar=\toks20
+)
+(D:\tex\CTEX\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+\fancy@headwidth=\skip46
+\f@ncyO@elh=\skip47
+\f@ncyO@erh=\skip48
+\f@ncyO@olh=\skip49
+\f@ncyO@orh=\skip50
+\f@ncyO@elf=\skip51
+\f@ncyO@erf=\skip52
+\f@ncyO@olf=\skip53
+\f@ncyO@orf=\skip54
+)
+(D:\tex\CTEX\MiKTeX\tex\latex\ams\math\amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip55
+
+For additional information on amsmath, use the `?' option.
+(D:\tex\CTEX\MiKTeX\tex\latex\ams\math\amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(D:\tex\CTEX\MiKTeX\tex\latex\ams\math\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks21
+\ex@=\dimen117
+))
+(D:\tex\CTEX\MiKTeX\tex\latex\ams\math\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen118
+)
+(D:\tex\CTEX\MiKTeX\tex\latex\ams\math\amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count91
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count92
+\leftroot@=\count93
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count94
+\DOTSCASE@=\count95
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen119
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count96
+\c@MaxMatrixCols=\count97
+\dotsspace@=\muskip10
+\c@parentequation=\count98
+\dspbrk@lvl=\count99
+\tag@help=\toks22
+\row@=\count100
+\column@=\count101
+\maxfields@=\count102
+\andhelp@=\toks23
+\eqnshift@=\dimen120
+\alignsep@=\dimen121
+\tagshift@=\dimen122
+\tagwidth@=\dimen123
+\totwidth@=\dimen124
+\lineht@=\dimen125
+\@envbody=\toks24
+\multlinegap=\skip56
+\multlinetaggap=\skip57
+\mathdisplay@stack=\toks25
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(D:\tex\CTEX\MiKTeX\tex\latex\tools\bm.sty
+Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
+LaTeX Info: Redefining \bm on input line 204.
+)
+(D:\tex\CTEX\MiKTeX\tex\latex\graphics\graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(D:\tex\CTEX\MiKTeX\tex\latex\graphics\keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks26
+)
+(D:\tex\CTEX\MiKTeX\tex\latex\graphics\graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(D:\tex\CTEX\MiKTeX\tex\latex\graphics\trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(D:\tex\CTEX\MiKTeX\tex\latex\00miktex\graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(D:\tex\CTEX\MiKTeX\tex\latex\pdftex-def\pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(D:\tex\CTEX\MiKTeX\tex\generic\oberdiek\infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+(D:\tex\CTEX\MiKTeX\tex\generic\oberdiek\ltxcmds.sty
+Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count103
+))
+\Gin@req@height=\dimen126
+\Gin@req@width=\dimen127
+)
+(D:\tex\CTEX\MiKTeX\tex\latex\cjk\CJK.sty
+Package: CJK 2008/12/29 4.8.2
+
+(D:\tex\CTEX\MiKTeX\tex\latex\cjk\mule\MULEenc.sty
+Package: MULEenc 2008/12/29 4.8.2
+)
+(D:\tex\CTEX\MiKTeX\tex\latex\cjk\CJK.enc
+File: CJK.enc 2008/12/29 4.8.2
+)
+LaTeX Info: Redefining \selectfont on input line 756.
+\CJK@indent=\box28
+)
+(D:\tex\CTEX\MiKTeX\tex\latex\float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count104
+\float@exts=\toks27
+\float@box=\box29
+\@float@everytoks=\toks28
+\@floatcapt=\box30
+)
+(D:\tex\CTEX\MiKTeX\tex\latex\harpoon\harpoon.sty
+Package: harpoon 1994/11/02 Harpoon drawing package by Tobias Kuipers
+\argwd=\skip58
+\arght=\skip59
+)
+(D:\tex\CTEX\MiKTeX\tex\latex\algorithms\algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(D:\tex\CTEX\MiKTeX\tex\latex\base\ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks29
+\c@algorithm=\count105
+)
+(D:\tex\CTEX\MiKTeX\tex\latex\algorithms\algorithmic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count106
+\c@ALC@line=\count107
+\c@ALC@rem=\count108
+\c@ALC@depth=\count109
+\ALC@tlm=\skip60
+\algorithmicindent=\skip61
+)
+(D:\tex\CTEX\MiKTeX\tex\latex\comment\comment.sty
+\CommentStream=\write3
+ Excluding comment 'comment')
+(D:\tex\CTEX\MiKTeX\tex\latex\cjk\standard.bdg
+File: standard.bdg 2008/12/29 4.8.2
+)
+(D:\tex\CTEX\MiKTeX\tex\latex\cjk\extended.enc
+File: extended.enc 2008/12/29 4.8.2
+)
+(D:\tex\CTEX\MiKTeX\tex\latex\cjk\extended.chr
+File: extended.chr 2008/12/29 4.8.2
+)
+("D:\undergraduate thesis\reports\thesis report.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 8.
+
+(D:\tex\CTEX\MiKTeX\tex\latex\psnfss\ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+(D:\tex\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count110
+\scratchdimen=\dimen128
+\scratchbox=\box31
+\nofMPsegments=\count111
+\nofMParguments=\count112
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count113
+\MPscratchDim=\dimen129
+\MPnumerator=\count114
+\makeMPintoPDFobject=\count115
+\everyMPtoPDFconversion=\toks31
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 14.
+ (D:\tex\CTEX\MiKTeX\tex\latex\amsfonts\umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 14.
+
+(D:\tex\CTEX\MiKTeX\tex\latex\amsfonts\umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for C19+song on input line 14.
+
+
+(D:\tex\CTEX\CTeX\tex\latex\CJK\GB\c19song.fd
+File: c19song.fd 2009/09/23 4.8.2
+)
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
+ []
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
+
+Overfull \hbox (7.54977pt too wide) in paragraph at lines 21--23
+\OT1/ptm/m/n/10.95 genes that pro-mote can-cer pro-lif-er-a-tion, and to ex-tra
+c-t them from huge amoun-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--23
+
+ []
+
+[1
+
+{D:/tex/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
+
+("D:\undergraduate thesis\reports\thesis report.toc")
+\tf@toc=\write4
+
+<segments.png, id=38, 143.03438pt x 126.4725pt>
+File: segments.png Graphic file (type png)
+ <use segments.png>
+Package pdftex.def Info: segments.png used on input line 32.
+(pdftex.def)             Requested size: 195.0pt x 172.42294pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--34
+
+ []
+
+[2] [3] <BeforeMutation1.png, id=48, 968.11688pt x 481.04718pt>
+File: BeforeMutation1.png Graphic file (type png)
+
+<use BeforeMutation1.png>
+Package pdftex.def Info: BeforeMutation1.png used on input line 37.
+(pdftex.def)             Requested size: 370.49881pt x 184.09903pt.
+
+<BeforeMutation2.png, id=49, 975.645pt x 481.04718pt>
+File: BeforeMutation2.png Graphic file (type png)
+
+<use BeforeMutation2.png>
+Package pdftex.def Info: BeforeMutation2.png used on input line 38.
+(pdftex.def)             Requested size: 370.49881pt x 182.67503pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--40
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--41
+
+ []
+
+[4 <D:/undergraduate thesis/reports/segments.png>]
+Overfull \hbox (4.23222pt too wide) in paragraph at lines 42--44
+\OT1/ptm/m/n/10.95 MEM-o to de-tec-t mod-ules obey-ing mu-tu-al-ly ex-clu-sive.
+ Vandin et al. (2012)[[]]
+ []
+
+[5 <D:/undergraduate thesis/reports/BeforeMutation1.png> <D:/undergraduate thes
+is/reports/BeforeMutation2.png>]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 46.
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
+
+ []
+
+[6]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 49.
+ (D:\tex\CTEX\MiKTeX\tex\latex\psnfss\omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 49.
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+
+ []
+
+
+Overfull \hbox (2.46896pt too wide) in paragraph at lines 52--54
+\OT1/ptm/m/n/10.95 with an in-no-va-tive s-cor-ing s-trat-e-gy called Max-i-mum
+ Weight Sub-ma-trix Prob-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--63
+
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 65--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--69
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--72
+
+ []
+
+<diffscores.png, id=68, 1143.27126pt x 624.3325pt>
+File: diffscores.png Graphic file (type png)
+ <use diffscores.png>
+Package pdftex.def Info: diffscores.png used on input line 86.
+(pdftex.def)             Requested size: 312.00119pt x 170.38206pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--88
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
+
+ []
+
+
+Overfull \hbox (19.9185pt too wide) in paragraph at lines 91--91
+[]\OT1/ptm/b/n/14.4 Multiple Val-ue Ge-net-ic Al-go-rith-m: a flex-i-ble method
+ 
+ []
+
+
+Overfull \hbox (4.7938pt too wide) in paragraph at lines 92--96
+\OT1/ptm/m/n/10.95 tion ma-trix A and an in-te-ger $\OML/cmm/m/it/10.95 t > \OT
+1/cmr/m/n/10.95 0$\OT1/ptm/m/n/10.95 , find a col-lec-tion $\OML/cmm/m/it/10.95
+ M \OT1/cmr/m/n/10.95 = \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 M[]; M[]; []  
+; M[]\OMS/cmsy/m/n/10.95 g$
+ []
+
+
+Overfull \hbox (1.26385pt too wide) in paragraph at lines 92--96
+\OT1/ptm/m/n/10.95 (mu-tu-al-ly ex-clu-sive) of $\OML/cmm/m/it/10.95 m \OMS/cms
+y/m/n/10.95  \OML/cmm/m/it/10.95 k$ \OT1/ptm/m/n/10.95 col-um-n sub-ma-tri-ces
+ that max-i-mizes $\OML/cmm/m/it/10.95 W[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.
+95 M\OT1/cmr/m/n/10.95 ) =$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--96
+
+ []
+
+[9 <D:/undergraduate thesis/reports/diffscores.png>]
+Overfull \hbox (30.03716pt too wide) in paragraph at lines 98--100
+$\OMS/cmsy/m/n/10.95 f\OT1/cmr/m/n/10.95 1\OML/cmm/m/it/10.95 ; []  ; t\OMS/cms
+y/m/n/10.95 g$\OT1/ptm/m/n/10.95 , de-note the s-pace of $[]$ sat-is-fy-ing the
+ in-equal-i-ty con-strain-t $\OML/cmm/m/it/10.95 S\OT1/cmr/m/n/10.95 (\OML/cmm/
+m/it/10.95 k[]; k[]\OT1/cmr/m/n/10.95 )$\OT1/ptm/m/n/10.95 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--100
+
+ []
+
+
+Overfull \hbox (1.74481pt too wide) in paragraph at lines 102--108
+\OT1/ptm/m/n/10.95 The mo-ti-va-tion is to find a fea-si-ble so-lu-tion cor-re-
+spond-ing to child $\OML/cmm/m/it/10.95 c[]; []  ; c[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--108
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--113
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--116
+
+ []
+
+[10] <shuffle.png, id=80, 850.67813pt x 302.63063pt>
+File: shuffle.png Graphic file (type png)
+ <use shuffle.png>
+Package pdftex.def Info: shuffle.png used on input line 121.
+(pdftex.def)             Requested size: 386.10214pt x 137.35542pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--123
+
+ []
+
+<permint.png, id=82, 1031.855pt x 228.855pt>
+File: permint.png Graphic file (type png)
+ <use permint.png>
+Package pdftex.def Info: permint.png used on input line 127.
+(pdftex.def)             Requested size: 386.10214pt x 85.63184pt.
+LaTeX Font Info:    Calculating math sizes for size <13.5> on input line 128.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13.5> not available
+(Font)              size <14.4> substituted on input line 128.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <9.44995> not available
+(Font)              size <9> substituted on input line 128.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <13.5> not available
+(Font)              size <14.4> substituted on input line 128.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <9.44995> not available
+(Font)              size <9> substituted on input line 128.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <13.5> not available
+(Font)              size <14.4> substituted on input line 128.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <9.44995> not available
+(Font)              size <9> substituted on input line 128.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <13.5> not available
+(Font)              size <14.4> substituted on input line 128.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <9.44995> not available
+(Font)              size <9> substituted on input line 128.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <13.5> not available
+(Font)              size <14.4> substituted on input line 128.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <9.44995> not available
+(Font)              size <9> substituted on input line 128.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <13.5> not available
+(Font)              size <14.4> substituted on input line 128.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <9.44995> not available
+(Font)              size <9> substituted on input line 128.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--129
+
+ []
+
+[11 <D:/undergraduate thesis/reports/shuffle.png>]
+<selection.png, id=87, 602.25pt x 328.22626pt>
+File: selection.png Graphic file (type png)
+ <use selection.png>
+Package pdftex.def Info: selection.png used on input line 134.
+(pdftex.def)             Requested size: 350.99762pt x 191.3029pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--136
+
+ []
+
+[12 <D:/undergraduate thesis/reports/permint.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
+
+ []
+
+[13 <D:/undergraduate thesis/reports/selection.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 146--150
+
+ []
+
+<figure2.png, id=100, 481.8pt x 481.8pt>
+File: figure2.png Graphic file (type png)
+ <use figure2.png>
+Package pdftex.def Info: figure2.png used on input line 154.
+(pdftex.def)             Requested size: 312.00119pt x 312.01207pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--156
+
+ []
+
+<figure3.png, id=101, 481.8pt x 481.8pt>
+File: figure3.png Graphic file (type png)
+ <use figure3.png>
+Package pdftex.def Info: figure3.png used on input line 157.
+(pdftex.def)             Requested size: 312.00119pt x 312.01207pt.
+ [14]
+<figure4.png, id=105, 481.8pt x 481.8pt>
+File: figure4.png Graphic file (type png)
+ <use figure4.png>
+Package pdftex.def Info: figure4.png used on input line 160.
+(pdftex.def)             Requested size: 312.00119pt x 312.01207pt.
+ [15 <D:/undergraduate thesis/reports/figure2.png>] [16 <D:/undergraduate thesi
+s/reports/figure3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
+
+ []
+
+
+Overfull \hbox (28.13222pt too wide) in paragraph at lines 166--187
+\OT1/ptm/m/n/10.95 s-core with those hid-den set-s. For con-ve-nience, let $\OM
+L/cmm/m/it/10.95 S\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 M\OT1/cmr/m/n/10.95 )
+ = \OML/cmm/m/it/10.95 n \OMS/cmsy/m/n/10.95   [][] j\OML/cmm/m/it/10.95 M\OMS/
+cmsy/m/n/10.95 4\OML/cmm/m/it/10.95 S[]\OMS/cmsy/m/n/10.95 j$\OT1/ptm/m/n/10.95
+ . 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--187
+
+ []
+
+[17 <D:/undergraduate thesis/reports/figure4.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 191--194
+
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
+
+ []
+
+[19] [20] ("D:\undergraduate thesis\reports\thesis report.aux")
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.9pt have occurred.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 4106 strings out of 495354
+ 49197 string characters out of 3183635
+ 113368 words of memory out of 3000000
+ 7124 multiletter control sequences out of 15000+200000
+ 48416 words of font info for 139 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 27i,12n,43p,1253b,845s stack positions out of 5000i,500n,10000p,200000b,50000s
+{D:/tex/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<D:/tex/CTEX/CTeX/fonts/t
+ruetype/chinese/simsun.ttf><D:/tex/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf>
+<D:/tex/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/tex/CTEX/CTeX/fonts/tru
+etype/chinese/simsun.ttf><D:/tex/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D
+:/tex/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/tex/CTEX/CTeX/fonts/truet
+ype/chinese/simsun.ttf><D:/tex/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/
+tex/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/tex/CTEX/CTeX/fonts/truetyp
+e/chinese/simsun.ttf><D:/tex/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/te
+x/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/tex/CTEX/CTeX/fonts/truetype/
+chinese/simsun.ttf><D:/tex/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/tex/
+CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/tex/CTEX/CTeX/fonts/truetype/ch
+inese/simsun.ttf><D:/tex/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/tex/CT
+EX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/tex/CTEX/CTeX/fonts/truetype/chin
+ese/simsun.ttf><D:/tex/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/tex/CTEX
+/CTeX/fonts/truetype/chinese/simsun.ttf><D:/tex/CTEX/CTeX/fonts/truetype/chines
+e/simsun.ttf><D:/tex/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/tex/CTEX/C
+TeX/fonts/truetype/chinese/simsun.ttf><D:/tex/CTEX/CTeX/fonts/truetype/chinese/
+simsun.ttf><D:/tex/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/tex/CTEX/CTe
+X/fonts/truetype/chinese/simsun.ttf><D:/tex/CTEX/CTeX/fonts/truetype/chinese/si
+msun.ttf><D:/tex/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/tex/CTEX/CTeX/
+fonts/truetype/chinese/simsun.ttf><D:/tex/CTEX/CTeX/fonts/truetype/chinese/sims
+un.ttf><D:/tex/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><D:/tex/CTEX/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/tex/CTEX/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmmi10.pfb><D:/tex/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmm
+i12.pfb><D:/tex/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:/tex/CT
+EX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/tex/CTEX/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmr10.pfb><D:/tex/CTEX/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmr12.pfb><D:/tex/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/
+tex/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><D:/tex/CTEX/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb><D:/tex/CTEX/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmsy8.pfb><D:/tex/CTEX/MiKTeX/fonts/type1/public/amsfonts/symbols/ms
+am10.pfb><D:/tex/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><D:/tex/CTEX/MiKT
+eX/fonts/type1/urw/times/utmr8a.pfb><D:/tex/CTEX/MiKTeX/fonts/type1/urw/times/u
+tmri8a.pfb>
+Output written on "thesis report.pdf" (20 pages, 657813 bytes).
+PDF statistics:
+ 271 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+

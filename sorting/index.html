@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <base target="_blank">
+    <title>Sorting Algorithms Demo</title>
+    <script>
+        function mute() {
+            var myAudio = document.getElementById("audio");
+            if (myAudio.volume == 0.0) {
+                myAudio.volume = 0.2;
+            } else {
+                myAudio.volume = 0.0;
+            }
+        }
+    </script>
+    <audio loop="true" id="audio" style="display:none;" src="../../music/audio/fireDance.mp3" controls autoplay loop></audio>
+</head>
+<body>
+	<script src="barGraph.js"></script>
+	<div id="graphDiv1"></div>
+	<br />
+    <button onclick="mute()">Mute!!!</button>
+    <button onclick="selectionSort()">Selection sort</button>
+    <button onclick="insertionSort()">Insertion sort</button>
+    <button onclick="mergeSort()">Merge sort</button>
+    <button onclick="heapSort()">Heap sort</button>
+    <button onclick="quickSort()">Quick sort</button>
+    <button onclick="bubbleSort()">Bubble sort</button>
+    <button onclick="shellSort()">Shell sort</button>
+    <button onclick="combSort()">Comb sort</button>
+    <button onclick="countingSort()">Counting sort</button>
+    <button onclick="bucketSort()">Bucket sort</button>
+    <button onclick="radixSort()">Radix sort</button>
+    <button onclick="shuffle()">Shuffle</button>
+    <button onclick="stop()">Stop!!!</button>
+    <!--Slider to control the pause time-->
+    <p>Speed:
+    <input type="range" min="1" max="1000" value="500" id="slider"></input>
+    <div id="value">Array size: 100</div>
+    <input type="range" min="10" max="1000" value="100" id="arraySize"></input>
+    <p>Foreground color:
+    <input class="jscolor" onchange="changeForegroundColor(this.jscolor)" value="white">
+    <p>Background color:
+    <input class="jscolor" onchange="changeBackgroundColor(this.jscolor)" value="black">
+    <p>Highlight color:
+    <input class="jscolor" onchange="changeHighlightColor(this.jscolor)" value="red">
+    <script src="visualize.js"></script>
+    <script src="slider.js"></script>
+    <script src="selectionSort.js"></script>
+    <script src="insertionSort.js"></script>
+    <script src="mergeSort.js"></script>
+    <script src="heapSort.js"></script>
+    <script src="quickSort.js"></script>
+    <script src="bubbleSort.js"></script>
+    <script src="shellSort.js"></script>
+    <script src="combSort.js"></script>
+    <script src="countingSort.js"></script>
+    <script src="bucketSort.js"></script>
+    <script src="radixSort.js"></script>
+    <script src="jscolor.js"></script>
+    <script src="minHeap.js"></script>
+    <script src="queue.js"></script>
+</body>
+</html>

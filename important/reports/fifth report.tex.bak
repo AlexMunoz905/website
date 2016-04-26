@@ -1,0 +1,36 @@
+\documentclass[xcolor=dvipsnames]{beamer}
+\useoutertheme{infolines}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{items}[ball]
+\usepackage{graphicx,multirow,color,xcolor,verbatim,float,comment,amsmath}
+\setbeamertemplate{frametitle}[default][center]
+\begin{document}
+\title{Simultaneously Identifying Multiple Pathways with Alternative Scoring Criteria}
+\author{Bowen Deng}
+\institute{Dept. of Prob. and Stat.}
+\date{}
+\begin{frame}
+\maketitle
+\end{frame}
+\begin{frame}
+To do list:\\
+\begin{itemize}
+\item Test the convergency of crossproduction with small $t$, fixed $k_{\min},k_{\max}$\\
+\item After this, the convergency of $k_{\min},k_{\max}$\\
+\item The selection of $t$\\
+\item The two-step linear programming\\
+\item Other approach for the optimization problem\\
+\item Biological Data\\
+\end{itemize}
+\end{frame}
+\begin{frame}{Crossproduct}
+With probability 0.1, the child might mutate.\\
+For example, 0.22 might mutate to 0.21 or 0.23 if the score could be higher.\\
+In this case, 0.22 will mutate to 0.21.\\
+After ten productions, we get ten parents and ten children.\\
+Parents:\\
+2.42  2.33  2.04  2.00 -0.71  1.16 -1.16  1.75  3.66  4.20\\
+Children:\\
+-0.9384129 -0.9384129  0.2243223 -0.9384129  0.2243223  0.8115732  0.2243223 -0.9384129 -0.9384129 -0.9384129
+\end{frame}
+\end{document}

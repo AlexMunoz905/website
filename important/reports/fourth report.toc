@@ -1,0 +1,10 @@
+\beamer@endinputifotherversion {3.14pt}
+\beamer@sectionintoc {1}{Organization}{2}{0}{1}
+\beamer@sectionintoc {2}{Simultaneous Pathway Detection with Alternative Scoring Criteria}{3}{0}{2}
+\beamer@subsectionintoc {2}{1}{Literature Review}{3}{0}{2}
+\beamer@subsectionintoc {2}{2}{Candidate Criteria}{8}{0}{2}
+\beamer@subsectionintoc {2}{3}{Multiple Value Genetic Algorithm}{12}{0}{2}
+\beamer@subsectionintoc {2}{4}{Parameter Selection}{20}{0}{2}
+\beamer@sectionintoc {3}{Danger in Simulation Study}{30}{0}{3}
+\beamer@sectionintoc {4}{Selection of $k$ via Stability Criteria}{35}{0}{4}
+\beamer@sectionintoc {5}{Further Work}{40}{0}{5}

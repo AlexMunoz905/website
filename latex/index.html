@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LaTeX</title>
+	<link rel="stylesheet" href="//cdn.yunqi.li/bootstrap/2.3.2/css/bootstrap.min.css">
+	<script src="//cdn.yunqi.li/jquery/jquery.min.js"></script>
+	<script src="/library/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	<script>
+		$(document).ready(function() {
+			var s1 = "\\mathrm{e}^{\\mathrm{i}\\pi} + 1 = 0";
+			var s2 = "\\sum_j {\\binom{k}{j}\\binom{l}{j}\\binom{n+k+l-j}{k+l}} = \\binom{n+k}{k}\\binom{n+l}{l}";
+			var s3 = "\\begin{vmatrix}\n"
+				+ "\tx_0 & x_1 & x_2 & \\cdots & x_{n-1} \\\\\n"
+				+ "\tx_{n-1} & x_0 & x_1 & \\cdots & x_{n-2} \\\\\n"
+				+ "\tx_{n-2} & x_{n-1} & x_0 & \\cdots & x_{n-3} \\\\\n"
+				+ "\t\\vdots & \\vdots & \\vdots & \\ddots & \\vdots \\\\\n"
+				+ "\tx_1 & x_2 & x_3 & \\cdots & x_0 \\\\\n"
+				+ "\\end{vmatrix}\n"
+				+ "= \\prod_{k=0}^{n-1}\\sum_{j=0}^{n-1}{\\mathrm{e}^\\frac{2jk\\pi\\mathrm{i}}{n}x_j}";
+			var sample_string = "$$ " + s1 + " $$\n$$ " + s2 + " $$\n$$ " + s3 + " $$";
+			$("#input").val(sample_string).attr("rows", 5).focus(function() {
+				$(this).attr("rows", 10);
+			}).blur(function() {
+				$(this).attr("rows", 5);
+				$("#output").val($(this).val());
+				MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+			});;
+			$("#output").val(sample_string);
+		});
+	</script>
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			extensions: ["tex2jax.js"],
+			jax: ["input/TeX", "output/HTML-CSS"],
+			tex2jax: {
+				inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+				displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+				processEscapes: true
+			},
+			"HTML-CSS": {
+				availableFonts: ["TeX"]
+			},
+			TeX: {
+				equationNumbers: {
+					autoNumber: "AMS"
+				}
+			}
+		});
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="row-fluid page-header">
+			<div class="span12 text-center">
+				<h1>$\LaTeX$</h1>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<textarea class="span12" id="input"></textarea>
+		</div>
+		<br>
+		<div class="row-fluid">
+			<output class="span12 well" id="output"></output>
+		</div>
+	</div>
+</body>
+</html>
+
+<script>
+</script>

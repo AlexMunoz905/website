@@ -1,0 +1,58 @@
+\documentclass[a4paper,12pt]{article}
+\begin{document}
+\underline{statweb.stanford.edu/~owen/courses/305}\\
+\\
+Prerequisites
+\begin{itemize}
+	\item
+Matrix algebra: eigenvalues, rank, Orthogonal matrices...\\
+\item
+Probability: normal, t, $\chi^2$, CLT, covariance\\
+\item
+Statistics: p-value, conf. intervals, hypothesis testing, regression\\
+\item
+Computation: R, python, Matlab, C\\
+\item
+Experience: fitting models, applying methods\\
+\end{itemize}
+\emph{Statistics is almot but not quite math}\\
+\emph{Statistics is almot but not quite computing}\\
+\\
+\textbf{Modeling is tricky:}
+\begin{itemize}
+	\item	hard to choose a model\\
+	\item wrong assumptions can lead to right answers\\
+	\item can't quite prove things about the world\\
+\end{itemize}
+\textbf{Linear Models}\\
+\\
+	have X predict $y \in R$\\
+	X arbitrary\\
+	data $(X_i, y_i) i = 1, ..., n$\\
+	\\
+	Least Square Error criteria:\\
+	Best predict of y:\\
+	for $X = x, 	\mu(x) = E(y|X)$
+	\[
+		E([Y - m(x)]^2|X = x)
+	= E([Y - \mu + \mu - m(x)] ^ 2 | X = x)
+	= V(Y | X = x) + (\mu - m(x)) ^ 2
+	\geq V(Y)
+\]
+\\
+	However, if you do not believe in the mean square error criteria, the answer is different:\\
+	For absolute deviation loss,
+	\[
+		E(|Y - m(X)| | X = x)
+	\]
+	take $m(X) = median(Y | X = x)$\\
+	\\
+	Alternate Proof (sketch)\\
+	Set $\frac{d}{\mathrm{dm}} E((y - m) ^ 2 | X = x) = 0$\\
+\\
+\textbf{Linear Model Examples}\\
+\\
+\[ Y_i = \beta_0 + \beta_1 X_i + e_i \]
+\[ e \sim (0, \sigma ^ 2)\]
+(maybe normal) 
+\end{document}

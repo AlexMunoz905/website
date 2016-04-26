@@ -1,0 +1,80 @@
+\documentclass[xcolor=dvipsnames]{beamer}
+\useoutertheme{infolines}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{items}[ball]
+\usepackage{graphicx,multirow,color,xcolor,verbatim,float,comment,amsmath}
+\setbeamertemplate{frametitle}[default][center]
+\begin{document}
+\title{Community Detection in Gene Network}
+\author{Bowen Deng}
+\institute{Dept. of Prob. and Stat.}
+\date{}
+\begin{frame}
+\maketitle
+\end{frame}
+\begin{frame}
+\tableofcontents
+\end{frame}
+\section{Optimization Problem}
+\begin{frame}{Introduction}
+For directed graph, source community and terminal community could be detected with
+\[
+(\hat{u},\hat{v})=\arg\max u^TQv-\eta(\|u\|_0+\omega\|u\|_0), s.t. \|u\|_2=1, \|v\|_2=1
+\]
+Source community $SC=\{i|\hat{u}[i]\neq0\}$,\\
+Terminal community $TC=\{j|\hat{v}[j]\neq0\}$.\\
+\end{frame}
+\begin{frame}{Optimization Strategy}
+For a given vector $z$ and a fixed constant $\rho>0$, the solution of
+\[
+\max u^Tz-\rho\|u\|_0, s.t. \|u\|_2=1
+\]
+is
+\[
+u=z_l^h/\|z_l^h\|_2
+\]
+\end{frame}
+\begin{frame}
+Repeat
+\begin{eqnarray}
+z\leftarrow Qv, \rho\leftarrow\eta\nonumber\\
+u\leftarrow z_l^h/\|z_l^h\|_2,\nonumber\\
+z\leftarrow Q^Tu, \rho\leftarrow\eta\omega\nonumber\\
+v\leftarrow z_l^h/\|z_l^h\|_2\nonumber
+\end{eqnarray}
+\end{frame}
+\begin{frame}
+For undirected simple graph, e.g. gene network, a community could be detected with the symmetric counterpart:\\
+\[
+\min f(u)=u^TMu+\rho\|u\|_0, s.t. u^Tu=1
+\]
+where $M$ be a fixed symmetric matrix, $\rho$ be a positive number.\\
+\end{frame}
+\begin{frame}{Mimic Algorithm}
+Borrowing the idea from the previous optimization solving,
+\begin{eqnarray}
+z\leftarrow Qu \nonumber\\
+u\leftarrow z_l^h/\|z_l^h\|_2\nonumber
+\end{eqnarray}
+\end{frame}
+\begin{frame}{Brute Force Algorithm}
+Fixing $\|u\|_0=k$, the objective is to find a submatrix $|\hat{M}|=k$ with the smallest eigenvalue.\\
+\end{frame}
+\begin{frame}{Genetic Algorithm}
+\end{frame}
+\begin{frame}{Variations of the Problem}
+Variation 1.
+\[
+\min u^TMu+\rho\|u\|_1, s.t. u^Tu=1
+\]
+Variation 2.
+\[
+\min u^TMu+\rho\|u\|_1^2, s.t. u^Tu=1
+\]
+\end{frame}
+\begin{frame}{ISTA}
+
+\end{frame}
+
+
+\end{document}

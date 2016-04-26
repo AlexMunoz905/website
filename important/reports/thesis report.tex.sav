@@ -1,0 +1,99 @@
+\documentclass{article}
+\usepackage{indentfirst, amssymb, amsmath, verbatim, latexsym, mathrsfs, algorithm, algorithmic, syntonly, float, graphicx, clrscode, hyperref}
+\newcommand{\dotcup}{\ensuremath{\mathaccent\cdot\cup}}
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{2em}
+\linespread{1.4}
+\title{MVGA: Method for Simultaneous Identification of Multiple Driver Cancer Pathways}
+\author{Bowen Deng}
+\date{}
+\begin{document}
+\maketitle
+
+\section{INTRODUCTION}
+Genetic mutations are long known to be related with cancer. Yet, only a small fraction of whole genomes are significant. The advent of high-throughput technologies enables scientists to obtain huge amount of genetic mutation data easily. Yet, analyzing those high dimensional data remains a challenge.\\
+At first, people focused on single gene mutations that might cause cancer. The chronic myeloid leukemia (CML) was cured by designing drugs for specific gene considered to be cancer-related.\\
+However, the complexity of cancer proliferation is later realized: Cancer does not attack certain genes, instead, they attack gene networks called pathways.\cite{pathway} Therefore, we have to study cancer related gene mutation on a pathway level rather than on genomic level. Identifying gene pathway is by no means easy, taking into account the huge amount of possible combinations of genes. Even the collection of three genes combinations has a size of $10^9$, making it impossible to calculate within tolerable time. To cope with the huge computational cost, people imposed two assumptions that make the problem well-posed. The first assumption is high coverage: most patients have at least on mutation in one pathway. \cite{Mutually Exclusive} Otherwise, the pathway detected is not significant. Another assumption is high exclusivity: most patients have no more than one mutations in one pathway. We can view tumorigenesis as an annually accumulated Darwinian evolutionary process. As shown in figure 1, it is expensive and redundant for the cancer to attack two genes in the same network. Consequently, the cancer would prefer to attack genes on different pathways. This assumption is supported by numerous examples of mutually exclusive driver mutations including: EGFR, KRAS in lung cancer; TP53, MDM2 in glioblastoma; KRAS, PTEN in endometrial and skin cancers.\\
+Under the two assumptions, the problem then became solvable. There are studies based on prior knowledge about pathways. \cite{Prior1} \cite{Prior2} However, the prior knowledge is limited compared with the huge amount of possible gene links. It would be inappropriate to use those biased prior knowledge. \cite{RME} proposed a method that identifies mutational patterns without prior knowledge. In contrast, \cite{Ciriello} proposed MEMo to detect modules obeying mutually exclusive. \cite{De novo} proposed an innovative scoring strategy, called Maximum Weight Submatrix Problem (MWSP) for a possible pathway and find the maximizer of the score, which is the basis of our work. They proposed, in their work, a greedy algorithm and an MCMC algorithm for maximizing the objective score. In spite of the nice theoretical results in \cite{De novo}, both methods are flawed. Greedy algorithms work well under Gene Independence Model, which is only reasonable for some types of somatic mutations (e.g., SNP) but not others (e.g., CNV)\cite{De novo}. On the other hand, the MCMC might trap in a local maxima and is inexact.\\
+To circumvent those limitations, \cite{Efficient methods} proposed a binary linear programming (BLP) problem which is exact, and a genetic algorithm which could be generalized easily. A similar work \cite{MDendrix} identifies multiple mutually exclusive pathways simultaneously by generalizing the original problem and applying BLP for solving it. The problem of all those BLP is that they lack flexibility and is hard to generalize. Our work is based on the work of \cite{MDendrix}, but includes a strategy for automatically selecting the number of pathways. It also proposed a Multiple Value Genetic Algorithm (MVGA) to avoid local trapping, while the algorithm is also easy to generalize. The MVGA borrowed idea from Greedy Algorithm \cite{GA}, and works for not only this specific problem, but also several important optimization problems.
+
+\section{MATERIALS AND METHODS}
+\subsection{A brief introduction}
+Two aspects of driver mutation pathway in cancer genes were emphasized as the key to identify pathways. According to \cite{De novo}, we can quantify:\\
+\begin{itemize}
+\item High Coverage: many patients have at least one mutation in the pathway\\
+\item High Exclusivity: most patients have no more than one mutation in this pathway.\\
+\end{itemize}
+with an innovative scoring strategy called Maximum Weight Submatrix Problem (MWSP).\\
+Given the mutation data represented by a binary mutation matrix A with m rows and n columns, the maximum weight submatrix problem is defined as finding a submatrix M of size $m\times k$ in A by maximizing the scoring function:
+\[
+W(M)=|\Gamma(M)|-\omega(M)=2|\Gamma(M)|-\sum_{g\in M}|\Gamma(g)|,
+\]
+where $\Gamma(g)$ represents the set of patients in which gene g is mutated. Thus, the first term $|\Gamma(M)|=|\cup_{g\in M}\Gamma(g)|$ is the coverage score.\\
+And $\omega(M)\triangleq \sum_{g\in M}|\Gamma(g)|-|\Gamma(M)|$ measures the coverage overlap of M.\\
+We want to solve the following NP-hard problem:\\
+\textbf{Maximum Weight Submatrix Problem (MWSP):} Given an $m \times n$ mutation matrix $A$ and an integer $k > 0$, find the $m \times k$ column submatrix $\hat{M}$ of $A$ that maximizes W(M).\\
+The \cite{MDendrix} formulated this problem as an integer linear program (ILP), while the MWSP became generalized to Multiple Maximum Weight Submatrices Problem.\\
+The drawback of their method is that it does not generalize to other scoring strategy easily. And they did not give a strategy to select parameters such as the lower boundary for gene number in one pathway $k_{\min}$, upper boundary for pathway gene number $k_{\max}$ (without such a constraint, we might get too large a set of genes in one pathway).\\
+
+\subsection{Multiple Value Genetic Algorithm: a flexible method}
+Although considering the problem as an ILP runs efficiently, it cannot be applied to other scoring criteria. For example, in \cite{RME}, an alternative approach for driver pathway is proposed.\\
+Coverage Score:\\
+\[C(M)=\frac{\#(\exists g\in M \text{ mutates in }p)}{m}\]
+Exclusivity Score:\\
+\[E(M)=\frac{\#(\text{exactly one } g\in M \text{ mutates in }p)}{\#(\exists g\in M \text{ mutates in }p)}\]
+and the rest is similar.\\
+This is just one example of deviation from the classic scoring strategy. Therefore, we need method that could be applied to various scoring methods.\\
+Genetic algorithm works well on generality, as in \cite{Efficient methods}. Inspired by their work, MVGA generalize the Genetic Algorithm for multiple value case rather than binary value scenario.\\
+\textbf{Multiple Maximum Weight Submatrices Problem.} Given an $m\times n$ mutation matrix A and an integer $t>0$, find a collection $M=\{M_1,M_2,\cdots,M_t\}$ (mutually exclusive) of $m\times k$ column submatrices that maximizes $W'(M)=\sum_{\rho=1}^tW(M_{\rho})$.\\
+$W'(M)$ is uniquely determined by $M=\{M_1,M_2,\cdots,M_t\}$, and we can represent $M$ with an indicator vector $x$ of length $n$. $x_i$ is $\rho$ if the i-th gene is in $M_{\rho}$, $x_i=0$ if i-th gene is not in $M$.\\
+Therefore, the problem could be viewed as\\
+\[
+\max {f(\vec{x})}, \vec{x} \text{ consists of $0, 1, \cdots, t$}
+\]
+However, we also have constraint that $k_{\min} \leqslant \#\{x_i = \rho\} \leqslant k_{\max}, \forall \rho \in \{1,\cdots,t\}$, denote the space of $\vec{x}$ satisfying the inequality constraint $S(k_{\min}, k_{\max})$. This constraint could be a huge problem: if we set $k_{\min} = k_{\max}$, the space of feasible $\vec{x}$ is extremely small. For generality, we want to apply Genetic Algorithm for this problem, and therefore, we need to devise a crossproduct process satisfying:\\
+\[
+\forall x, y\in S(k_{\min}, k_{\max}), c(x, y)\in S(k_{\min}, k_{\max})
+\]
+where $c(x, y)$ is the product of $x$ and $y$.\\
+We call this property closure, the operator $c:S\times S\rightarrow S$ closure operator. A easy but feasible closure operator would be $c(x, y) = x$, but it is terrible for genetic algorithm: the population never evolves, it just permutes over time. Consequently, we need to make $c(x, y)$ as different from its parent $x, y$ as possible. We can represent it with the following integer linear programming problem.\\
+Denote father: $F=(a_1,\cdots,a_n)$, mother: $M=(b_1,\cdots,b_n)$, $a_i,b_i\in\{0,1,\cdots,t\}$.\\
+$a_i=\rho$ means i-th gene is in the $\rho$-th set, if $\rho=0$, i-th gene is not selected.\\
+The motivation is to find a feasible solution corresponding to child $c_1,\cdots,c_n$ under constraint:\\
+\[
+\sum_{i=1}^n[(1-x_i)\mathrm{I}(a_i=\rho)+x_i\mathrm{I}(b_i=\rho)]\in[k_{\min},k_{\max}], \forall \rho \in \{1, \cdots, t\} (1)
+\]
+where $x_i=0$ represents $c_i=a_i$, and $x_i=1$ represents $c_i=b_i$.\\
+Moreover,\\
+\[\sum_{a_i\text{ or }b_i>0}x_i\in[\frac{s-c}{2},\frac{s+c}{2}].\]
+where $s=\#\{a_i\text{ or }b_i>0\}$.\\
+We should minimize $c$ (ILP). The motivation is to find a feasible child $c_1,\cdots, c_n$ (satisfying (1)), which deviates most from its parents (the overlapping of the child and the mother $\sum{x_i}$ is closest to $\frac{s}{2}$, where $s$ be the number of genes that mutates in either parent (elements that are nonzero in either parent).\\
+
+
+
+
+
+
+
+
+
+
+
+\begin{thebibliography}{1}
+    \bibitem{pathway}{Vogelstein B, Kinzler KW (2004)}{ Cancer genes and the pathways they control. Nat Med 10: 789¨C799.}
+     \bibitem{Mutually Exclusive}{Ciriello G, Cerami E, Sander C, Schultz N (2012)}{Mutual exclusivity analysis identifies oncogenic network modules. Genome Res 22: 398¨C406.}
+     \bibitem{Prior1}{Efroni, S. (2011)}{Detecting cancer gene networks characterized by recurrent genomic alterations in a population. PLoS ONE, 6, e14437.}
+     \bibitem{Prior2}{Boca, S.M. (2010)}{Patient-oriented gene set analysis for cancer mutation data. Genome Biol, 11, R112.}
+      \bibitem{RME}{Miller et al.: Discovering functional modules by identifying recurrent and mutually exclusive mutational patterns in tumors. BMC Medical Genomics 2011 4:34}
+\bibitem{Ciriello}{Ciriello, G., et al. (2012)}{Mutually exclusivity analysis identifies oncogenic network modules. Genome Res., 22, 398-406}
+ \bibitem{De novo}{Vandin et al. (2012)}{{\em De novo} discovery of mutated driver pathways in cancer. {\em Genome Res}., 22, 375-385.}
+ \bibitem{Efficient methods}{Zhao,J., Zhang,S., Wu,L.Y. and Zhang,X.S. (2012)}{Efficient methods for identifying mutated driver pathways in cancer. Bioinformatics, 28, 2940¨C2947.}
+ \bibitem{MDendrix}{Leiserson,M.D., Blokh,D., Sharan,R. and Raphael,B.J. (2013)}{Simultaneous identification of multiple driver pathways in cancer. PLoS Comput. Biol., 9, e1003054.}
+     \bibitem{GA}{Goldberg, D.E. (1989)}{Genetic Algorithms in Search Optimization and Machine Learning. Addison Wesley.}
+
+
+
+\end{thebibliography}
+
+
+\end{document}

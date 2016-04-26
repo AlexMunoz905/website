@@ -1,0 +1,12 @@
+form {
+	display: inline-block;
+}
+
+.list {
+	font-family:garamond;
+	color:#cc0000;
+}
+
+input[name="level-name"] {
+	display: none;
+}

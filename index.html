@@ -5,8 +5,10 @@
 <title>Bowen Deng's homepage</title>
 <base target="_blank">
 <link rel="stylesheet" href="main.css">
+<script type="text/javascript" src="https://cdn.rawgit.com/brython-dev/brython/3.2.2/www/src/brython.js">
+</script>
 </head>
-<body>
+<body onload=brython()>
 <div class="links">
     <div class="link"><a href="http://bq.yunqi.li/music">music</a></div>
     <div class="link"><a href="chris">An interactive adventure game</a></div>
@@ -17,8 +19,16 @@
 </div>
 <div class="intro">
     <h1>Welcome <a href="vim_users.jpg">vim users</a>, <a href="emacs_users.jpg">emacs users</a>, and users of any other text editor!</h1>
-    <p>Hi, I'm Bowen Deng. I am currently pursuing a Master Degree in Statistics at Stanford University. I'm interested in Artificial Intelligence, Naturally Language Processing, and Information Retrieval. Hope you like my website!</p>
+    <p>Hi, I'm Bowen Deng. I just received a Master Degree in Statistics at Stanford University. I'm interested in Artificial Intelligence, Naturally Language Processing, and Information Retrieval. Hope you like my website!</p>
     <a href="sorting">Sorting Demo</a>
+    <script src="test.js">
+    </script>
+    <p>Prove you are not robot!</p>
+    <!--<script type="text/python" src="validation.py"></script>-->
+    <input id="zone"><button id="mybutton">click!</button>
+    <?php
+    shell_exec('python3.4 validation.py')
+    ?>
 </div>
 </body>
 </html>

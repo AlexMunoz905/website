@@ -20,6 +20,7 @@ p {
 .link {
 	background-color: #ABCDEF;
 	transition: background-color 0.5s ease;
+    width: 16%;
 	display: inline-block;
 	border-radius: 5px;
 	border: 1px solid #ccc;

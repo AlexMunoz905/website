@@ -13,6 +13,8 @@ function shellSort() {
                 var tmp = arr[k];
                 arr[k] = arr[k - gap];
                 arr[k - gap] = tmp;
+                pairs[pairs.length] = [k, k - gap];
+                states[states.length] = arr.slice();
                 k -= gap;
             }
         }

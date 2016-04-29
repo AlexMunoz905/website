@@ -5,30 +5,30 @@
 <title>Bowen Deng's homepage</title>
 <base target="_blank">
 <link rel="stylesheet" href="main.css">
-<script type="text/javascript" src="https://cdn.rawgit.com/brython-dev/brython/3.2.2/www/src/brython.js">
-</script>
+<script type="text/javascript" src="https://cdn.rawgit.com/brython-dev/brython/3.2.2/www/src/brython.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
 </head>
 <body onload=brython()>
 <div class="links">
-    <div class="link"><a href="http://bq.yunqi.li/music">music</a></div>
-    <div class="link"><a href="chris">An interactive adventure game</a></div>
-    <div class="link"><a href="treasure">Treasure finding</a></div>
-    <div class="link"><a href="links">Useful links</a></div>
-    <div class="link"><a href="softwares">Useful softwares</a></div>
+    <div class="link"><a href="http://bq.yunqi.li/music">Music</a></div>
+    <div class="link"><a href="chris">Adventure</a></div>
+    <div class="link"><a href="treasure">Treasure</a></div>
+    <div class="link"><a href="softwares">Softwares</a></div>
     <div class="link"><a href="jokes">Jokes</a></div>
 </div>
 <div class="intro">
     <h1>Welcome <a href="vim_users.jpg">vim users</a>, <a href="emacs_users.jpg">emacs users</a>, and users of any other text editor!</h1>
-    <p>Hi, I'm Bowen Deng. I just received a Master Degree in Statistics at Stanford University. I'm interested in Artificial Intelligence, Naturally Language Processing, and Information Retrieval. Hope you like my website!</p>
+    <p>Hi, I'm Bowen Deng. I am a Quantitative Analyst at Google. My major interests are Machine Learning, Natural Language Processing, and Information Retrieval. Hope you like my website!</p>
+    <p class="tab blink">Don't blink!</p>
     <a href="sorting">Sorting Demo</a>
-    <script src="test.js">
-    </script>
+    <!--<script type="text/python" src="./generateCode.py"></script>-->
     <p>Prove you are not robot!</p>
-    <!--<script type="text/python" src="validation.py"></script>-->
-    <input id="zone"><button id="mybutton">click!</button>
-    <?php
-    shell_exec('python3.4 validation.py')
-    ?>
+    <img src="idencode.png">
+    <input id="zone"><button id="mybutton" onclick="validate()">click!</button>
+    <script type="text/javascript" src="validation.js"></script>
+    <a href="http://deeplearning.stanford.edu/wiki/index.php/UFLDL_Tutorial">UFLDL</a>
+    <a href="http://bbs.55bbs.com/viewthread.php?tid=6481004">Japanese horror</a>
+    <script type="text/javascript" src="test.js"></script>
 </div>
 </body>
 </html>

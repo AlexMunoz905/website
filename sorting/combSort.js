@@ -19,6 +19,8 @@ function combSort() {
                 var tmp = arr[i];
                 arr[i] = arr[i + gap];
                 arr[i + gap] = tmp;
+                pairs[pairs.length] = [i, i + gap];
+                states[states.length] = arr.slice();
             }
         }
     }

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<root>
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Chrome</name>
+    <url type="file">/Applications/Google\ Chrome.app</url>
+  </vkopenurldef>
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_System</name>
+    <url type="file">/Applications/System\ Preferences.app</url>
+  </vkopenurldef>
+
+  <replacementdef>
+    <replacementname>LAUNCHER_MODE_V2_EXTRA</replacementname>
+    <replacementvalue>
+      <![CDATA[
+        <autogen>
+          __KeyDownUpToKey__
+          KeyCode::C,
+          KeyCode::VK_OPEN_URL_APP_Chrome,
+        </autogen>
+
+        <autogen>
+          __KeyDownUpToKey__
+          KeyCode::S,
+          KeyCode::VK_OPEN_URL_APP_System,
+        </autogen>
+      ]]>
+    </replacementvalue>
+  </replacementdef>
+</root>

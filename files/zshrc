@@ -1,0 +1,237 @@
+# to-do-list on a new mac
+# download karabiner
+# map caps lock to left control; map return (press down only) to control; map left control to <; map left shift to (; map right shift to )
+export ZSH=/Users/bowendeng/.oh-my-zsh
+ZSH_THEME="robbyrussell"
+plugins=(git)
+source $ZSH/oh-my-zsh.sh
+alias rc="vim ~/.zshrc"
+alias run="source ~/.zshrc"
+alias pq="vim ~/.pq"
+
+setopt extendedglob
+export CLICOLOR=1
+setopt AUTO_CD
+PROMPT_COMMAND='ls'
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+COMPLETION_WAITING_DOTS="true"
+
+plugins=(git)
+
+export PATH="$PATH:/usr/local/git/current/bin:/bin:/usr/local/sbin:/Library/Tex/texbin:/Users/bowendeng/miniconda3/bin:/Users/bowendeng/anaconda/envs/py3k/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/TeX/texbin:/usr/local/mysql/bin:/usr/local/bin/gnuplot:/usr/local/go/bin:/Users/bowendeng/anaconda2/bin:/Applications/SageMath:/Users/bowendeng/GoogleDrive/:$SPARK_HOME/bin:/Users/bowendeng/scala-2.11.7/bin:/opt/local/bin:/opt/local/sbin"
+
+source $ZSH/oh-my-zsh.sh
+
+# ssh
+# export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+alias vimrc='vim ~/.vimrc'
+alias dr='cd ~/GoogleDrive/'
+function mn() {
+	file=$1
+	base=${file%.*}
+	pdflatex $base.tex;
+	pdflatex $base.tex;
+	rm $base.out;
+	rm $base.log;
+	rm $base.aux;
+	rm $base.fls;
+	rm $base.aux;
+}
+alias auth='sudo chmod u+x'
+alias corn='ssh bdeng2@corn.stanford.edu'
+
+alias ..='cd ..'
+alias c-='cd -'
+
+#export CLICOLOR=1
+#export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+
+## Colorize the grep command output for ease of use
+#alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+## Start calculator with math support
+alias bc='bc -l'
+
+## create parent directories on demand
+alias mkdir='mkdir -pv'
+
+## Colorize diff output
+#alias diff='colordiff -ybB'
+#alias diff='colordiff -y'
+alias diff='vimdiff'
+
+## Command shortcuts to save time
+alias h='history'
+#alias j='jobs -l'
+
+## Create a new set of commands
+alias path='echo -e ${PATH//:/\\n}'
+alias now='date +"%T"'
+alias nowtime=now
+alias nowdate='date +"%d-%m-%Y"'
+
+alias mv='mv -i'
+alias cp='cp -i'
+alias ln='ln -i'
+
+alias chown='chown --preserve-root'
+alias chmod='chmod --preserve-root'
+alias chgrp='chgrp --preserve-root'
+
+## Tune sudo and su
+alias root='sudo -i'
+alias su='sudo -i'
+
+## Pass halt / reboot via sudo
+alias reboot='sudo /sbin/reboot'
+alias poweroff='sudo /sbin/poweroff'
+alias halt='sudo /sbin/halt'
+alias shutdown='sudo /sbin/shutdown'
+
+#alias default='vim /usr/share/applications/defaults.list'
+alias fuck='sudo !!'
+
+alias R='R -q'
+alias py='ipython'
+alias battery='pmset -g batt'
+plugins=(git battery)
+alias o.='open .'
+alias sf='sftp bdeng2@corn.stanford.edu'
+
+function msg() {
+	sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText $1
+}
+
+function c() {
+	if cd "$@"; then
+		ls
+	else
+		echo "Using autojump...";
+		j "$@"
+	fi
+}
+
+function o() {
+	if ! open "$@"; then
+		echo "Jumping...";
+		jo "$@"
+	fi
+}
+
+# Troubleshooting
+# Esc+l as ls: .oh-my-zsh/lib/keybindings.zsh
+
+#sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db "update data set value = '~/tumblr_m1rr76huPN1qceekto1_500.png'" && killall Dock
+
+# link the dotfiles
+#./makesymlinks.sh
+
+# Extract
+###   Handy Extract Program
+extract () {
+if [ -f $1 ] ; then
+case $1 in
+*.tar.bz2)	 tar xvjf $1		;;
+*.tar.gz)	 tar xvzf $1	 ;;
+*.bz2)		 bunzip2 $1		  ;;
+*.rar)		 unrar x $1		;;
+*.gz)		 gunzip $1	   ;;
+*.tar)		 tar xvf $1		   ;;
+*.tbz2)		 tar xvjf $1	  ;;
+*.tgz)		 tar xvzf $1	   ;;
+*.zip)		 unzip $1	  ;;
+*.Z)		 uncompress $1	;;
+*.7z)		 7z x $1	;;
+*)			 echo "'$1' cannot be extracted via >extract<" ;;
+esac
+else
+echo "'$1' is not a valid file"
+fi
+}
+
+# Create a Terminal Calculator
+function calc { echo "${1}"|bc -l; }
+
+#/usr/share/dict/words
+
+#alias filetree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'"
+#test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
+
+# find the number of lines in a file
+
+# mysql
+#alias mysql='/usr/local/mysql/bin/mysql'
+alias mysqladmin='/usr/local/mysql/bin/mysqladmin'
+
+plugins+=(zsh-completions)
+autoload -U compinit && compinit
+
+# cat YOUR_FILENAME | sed 's/ /\n/g' | sort | uniq | awk '{print length, $0}' | sort -nr | head
+# pdftk A=input.pdf cat A22-36 output.pdf
+
+alias top="top -o cpu"
+
+# find path command name
+# find . -name "*resume*" -exec echo {} \;
+export PATH="/usr/local/sbin:$PATH"
+export PATH=/usr/local/Cellar/sbt/0.13.9/libexec/sbt:$PATH
+
+alias crawl='python ~/.crawler.py'
+
+#. /Users/bowendeng/torch/install/bin/torch-activate
+export PYTHONPATH="/Users/bowendeng/anaconda/envs/py3k/lib/python3.5/site-packages:$SPARK_HOME/python/:/Users/bowendeng/spark-1.6.0/python/build:/Users/bowendeng/spark-1.6.0/python/lib/py4j-0.9-src.zip:$PYTHONPATH"
+
+#alias matlab='/Applications/MATLAB_R2014a.app/bin/matlab -nodesktop -nosplash'
+
+# http://www.everythingcli.org/ranger-image-preview-on-osx-with-iterm2/
+
+#source ~/.iterm2_shell_integration.zsh
+alias imgcat="sudo ~/imgcat"
+export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home"
+stty -ixon
+
+alias s="ssh -X bowendeng@bowendeng0.mtv.corp.google.com"
+alias ss='ssh -2 -p 2046 root@yunqi.li'
+#http://sniptools.com/mac-osx/save-ssh-password-in-terminal
+
+#PS1="bowen$ "
+alias tm="vim ~/.tmux.conf"
+
+# http://blog.jobbole.com/86571/
+set -o vi
+export EDITOR=vim
+bindkey -v
+
+# zle -la
+# vi style incremental search
+bindkey '^R' history-incremental-search-backward
+bindkey '^S' history-incremental-search-forward
+bindkey '^P' history-search-backward
+bindkey '^N' history-search-forward
+bindkey '^B' vi-backward-char
+bindkey '^F' vi-forward-char
+bindkey '^K' vi-kill-eol
+bindkey '^T' transpose-chars
+bindkey '^A' vi-beginning-of-line
+bindkey '^E' vi-end-of-line
+bindkey '^D' vi-delete-char
+
+# autojump
+[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+
+# virtualenv -p python2.7 $HOME/ycm-env
+# source $HOME/ycm-env/bin/activate
+# ./install.py --clang-completer
+alias l='ls -G'
+alias gdb="sudo gdb -q"
+
+alias ta="tmux attach"
+alias tl="tmux ls"
+alias kt="killall tmux"
+
+alias sqlstart="cd /Library/LaunchDaemons; sudo launchctl load -F com.oracle.oss.mysql.mysqld.plist"
+alias download="cd ~/GoogleDrive; ./youtube-dl"

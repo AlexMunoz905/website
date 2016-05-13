@@ -1,0 +1,161 @@
+set shell=/bin/bash\ -l
+set nocompatible			 " be iMproved, required
+set ignorecase
+set infercase
+syntax on
+filetype plugin indent on	 " required
+set nofoldenable
+set nosmartindent
+set ai
+"set cindent
+set nu
+
+" Changing backspace behavior
+set backspace=2
+set tabstop=4
+set shiftwidth=4
+
+"http://vim.wikia.com/wiki/Dictionary_completions
+"set dictionary+=/usr/share/dict/words " C-xk
+"set complete+=k
+noremap <silent> <C-S> :update<CR>
+vnoremap <silent> <C-S> <C-C>:update<CR>
+inoremap <silent> <C-S> <C-O>:update<CR>
+
+filetype off                  " required
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tomtom/tplugin_vim'
+Plugin 'tomtom/tcomment_vim'
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+"
+" stuff for working with split windows
+"
+nnoremap <leader>w <C-w>v<C-w>l
+nnoremap <C-h> <C-w>h	
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" disable auto comment
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+" let pyindent_nested_paren="&sw*2"
+" let pyindent_open_paren="&sw*2"
+
+"http://stackoverflow.com/questions/4477031/vim-auto-indent-with-newline
+"imap <C-Return> <CR><CR><C-o>k<Tab>
+
+"https://github.com/justmao945/vim-clang
+let g:clang_c_options = '-std=gnu11'
+let g:clang_cpp_options = '-std=c++11 -stdlib=libc++'
+
+"vimacs
+imap <C-b> <Left>
+imap <C-f> <Right>
+imap <C-a> <Home>
+imap <C-e> <End>
+imap <C-d> <Del>
+inoremap <C-k> <C-r>=<SID>KillLine()<CR>
+"inoremap <silent> <C-W> <C-o>db
+"inoremap <silent> <C-U> <C-f><C-o>d0
+inoremap <silent> <C-Y> <C-R>"
+"inoremap <C-c> <Space><Left>
+inoremap <C-t> <Left><Left><C-o>x<C-o>p
+"http://stackoverflow.com/questions/3458689/how-to-move-screen-without-moving-cursor-in-vim
+inoremap <C-l> <C-o>zt
+"nnoremap <C-l> zz
+inoremap <M-f> <C-o>e<Right>
+inoremap <M-b> <C-Left>
+
+function! <SID>KillLine()
+	if col('.') > strlen(getline('.'))
+	  " At EOL; join with next line
+	  return "\<Del>"
+	else
+	  " Not at EOL; kill until end of line
+	  return "\<C-o>d$"
+	endif
+endfunction
+
+" http://vim.wikia.com/wiki/In_line_copy_and_paste_to_system_clipboard
+vmap <C-c> y:call system("pbcopy", getreg("\""))<CR>
+
+" Spellchecker
+set spell
+set spelllang=en_us
+highlight clear SpellBad
+highlight SpellBad term=standout ctermfg=1 term=underline cterm=underline
+highlight clear SpellCap
+highlight SpellCap term=underline cterm=underline
+highlight clear SpellRare
+highlight SpellRare term=underline cterm=underline
+highlight clear SpellLocal
+highlight SpellLocal term=underline cterm=underline
+
+inoremap <C-j> <C-m>
+
+" indenture setting for python
+"autocmd FileType python setl tabstop=2 expandtab shiftwidth=2 softtabstop=2
+
+" indent guide
+" display indentation guides
+set list listchars=tab:❘-,trail:·,extends:»,precedes:«,nbsp:×
+
+" convert spaces to tabs when reading file
+"autocmd! bufreadpost * set noexpandtab | retab! 4
+
+" https://coderwall.com/p/if9mda/automatically-set-paste-mode-in-vim-when-pasting-in-insert-mode
+function! WrapForTmux(s)
+  if !exists('$TMUX')
+	return a:s
+  endif
+
+  let tmux_start = "\<Esc>Ptmux;"
+  let tmux_end = "\<Esc>\\"
+
+  return tmux_start . substitute(a:s, "\<Esc>", "\<Esc>\<Esc>", 'g') . tmux_end
+endfunction
+
+let &t_SI .= WrapForTmux("\<Esc>[?2004h")
+let &t_EI .= WrapForTmux("\<Esc>[?2004l")
+
+function! XTermPasteBegin()
+  set pastetoggle=<Esc>[201~
+  set paste
+  return ""
+endfunction
+
+inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
+
+" Preserve indentation while pasting text from the OS X clipboard
+noremap <leader>p :set paste<CR>:put *<CR>:set nopaste<CR>
+
+let mapleader=" "
+
+" http://stackoverflow.com/questions/540721/compile-directly-from-vim
+au Filetype python noremap <silent> <C-I> :!clear; ipython -i %<CR>
+au BufEnter *.go noremap <silent> <C-I> :!clear; go run %<CR>
+au Filetype cpp noremap <silent> <C-I> :!clear; g++ -std=c++11 % -o %:r && ./%:r<CR>
+au BufEnter *.c noremap <silent> <C-I> <Esc>:!clear; gcc -std=gnu99 %; ./a.out<CR>
+au BufEnter *.tex noremap <silent> <C-I> :!clear; set shell=bash\ -i; mn %<CR>
+
+" http://stackoverflow.com/questions/1737163/traversing-text-in-insert-mode
+" https://github.com/maxbrunsfeld/vim-emacs-bindings/blob/master/plugin/emacs-bindings.vim
+cmap <C-b> <Left>
+cmap <C-f> <Right>
+cmap <C-a> <Home>
+"cnoremap <C-d> <Delete> " annoying, cannot use default
+cnoremap <C-k> <C-\>e getcmdpos() == 1 ?
+			\ '' : getcmdline()[:getcmdpos()-2]<CR>
+
+" http://code.tutsplus.com/tutorials/vim-essential-plugin-tcomment--net-19510
+map <leader>c <c-_><c-_>
+nmap <leader>o ggvGg?
+nmap <leader>d :windo diffthis<CR>
+" To html
+nmap <leader>h :%TOhtml<CR>

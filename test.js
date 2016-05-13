@@ -32,3 +32,19 @@ for (var i = 0; i < chromeApps.length; i++) {
     var msg = chromeApps[i].title + ': ' + chromeApps[i].numDownloads;
     console.log(msg)
 }
+
+var table = document.getElementById('star_table');
+table.innerHTML = '';
+for (var y = 0; y < 10; y++) {
+    var row = document.createElement('tr');
+    table.appendChild(row);
+    for (var x = 0; x < 10; x++) {
+        var cell = document.createElement('td');
+        var img = document.createElement('img');
+        <!-- No, this is NOT how to solve the problem.  Use one event handler. -->
+            img.addEventListener('mouseover', function() {this.src = 'star_on.gif';}, false);
+        row.appendChild(cell);
+        cell.appendChild(img);
+        img.src = 'star_off.gif';
+    }
+}
